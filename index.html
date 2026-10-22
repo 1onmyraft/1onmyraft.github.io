@@ -1,125 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tyler Fleming | Portfolio</title>
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #f8f9fb;
-      color: #1e1e1e;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    header {
-      background: #1e1e1e;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header p {
-      color: #aaa;
-      font-size: 1rem;
-    }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h2 {
-      color: #333;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 8px;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li {
-      margin-bottom: 16px;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #777;
-      font-size: 0.9rem;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tyler Fleming · Security &amp; Software</title>
+<meta name="description" content="Tyler Fleming, CS student at CSU Monterey Bay working on web app penetration testing, reverse engineering and software.">
+<meta property="og:title" content="Tyler Fleming · Security & Software">
+<meta property="og:description" content="Pen testing, reverse engineering and things I've built.">
+<meta property="og:url" content="https://1onmyraft.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
 </head>
 <body>
-  <header>
-    <h1>Tyler Fleming</h1>
-    <p>Computer Science Student | Software & Cybersecurity Enthusiast</p>
-    <p>
-      <a href="mailto:tylerfleming32@gmail.com" style="color:#93c5fd;">Email</a> |
-      <a href="https://github.com/1onmyraft" style="color:#93c5fd;">GitHub</a> |
-      <a href="https://www.linkedin.com/in/tylerjamesfleming" style="color:#93c5fd;">LinkedIn</a>
-    </p>
-  </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I'm a Computer Science student at CSU Monterey Bay passionate about software,
-      cybersecurity, and system-level engineering. I enjoy building, optimizing,
-      and occasionally breaking things to understand how they work.
-    </p>
-  </section>
+<a class="skip" href="#main">Skip to content</a>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Fortnite Automation & Mod Project</strong> — Created a C++-based
-        automation tool that went viral on TikTok/YouTube, earning over $2,000 in one week
-        and tens of millions of views.
-      </li>
-      <li>
-        <strong>Cryptocurrency Trading Simulator</strong> — Python GUI app that simulates
-        live crypto trading using the CoinGecko API; built with a team of four using Git and Trello.
-      </li>
-    </ul>
-  </section>
+<nav class="nav">
+  <a class="brand" href="#top">tf<span class="caret" aria-hidden="true"></span></a>
+  <div class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <button class="theme" id="theme" type="button" aria-label="Toggle light and dark mode">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+    </button>
+  </div>
+</nav>
 
-  <section>
-    <h2>Experience</h2>
-    <ul>
-      <li>
-        <strong>Esports Lounge – CSU Monterey Bay</strong><br />
-        Set up and maintained 20+ gaming PCs, handled updates, and managed the online admin system.
-      </li>
-      <li>
-        <strong>NaturesTech Inc.</strong><br />
-        Managed a Shopify store generating tens of thousands monthly, ran digital ad campaigns,
-        and handled automation and hardware improvements.
-      </li>
-    </ul>
-  </section>
+<main id="main">
 
-  <section>
-    <h2>Achievements</h2>
-    <ul>
-      <li>9th Place – OtterHack 2025 Hackathon</li>
-      <li>ICPC Regional Competitor 2025</li>
-      <li>Viral Developer Project – 10M+ combined views</li>
-    </ul>
-  </section>
+<header class="hero" id="top">
+  <p class="kicker">~/tyler <span class="dim">$</span> whoami</p>
+  <h1>Tyler Fleming</h1>
+  <p class="lede">
+    CS student at CSU Monterey Bay. I got into security by taking games apart to see how they work.
+    Now I test web apps for the bugs that actually matter. This summer that meant pen-testing a telehealth
+    platform with 2M+ patients and fixing the critical issues I found.
+  </p>
+  <div class="cta">
+    <a class="btn primary" href="Tyler_Fleming_Resume.pdf">Resume (PDF)</a>
+    <a class="btn" href="https://github.com/1onmyraft">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/tylerjamesfleming">LinkedIn</a>
+  </div>
+  <ul class="stats" aria-label="Highlights">
+    <li><strong>1st / 21</strong><span>OtterHack 2026</span></li>
+    <li><strong>2M+</strong><span>patients on the platform I pen-tested</span></li>
+    <li><strong>10M+</strong><span>views on my reverse-engineering videos</span></li>
+    <li><strong>7th</strong><span>in California, ICPC 2025 (Div. 2)</span></li>
+  </ul>
+</header>
 
-  <footer>
-    © 2025 Tyler Fleming | Hosted on GitHub Pages
-  </footer>
+<section id="work">
+  <h2><span class="num">01</span>Work</h2>
+
+  <article class="job">
+    <div class="when">Oct 2026 – now</div>
+    <div>
+      <h3>Cybersecurity <span class="at">@ Wagr</span></h3>
+      <p>Security work for a skill-based betting app that handles real-money transactions.</p>
+    </div>
+  </article>
+
+  <article class="job">
+    <div class="when">Jul – Aug 2026<br><span class="dim">Remote</span></div>
+    <div>
+      <h3>Software Engineering Intern <span class="at">@ NuggMD</span></h3>
+      <ul>
+        <li>Pen-tested the production web platform of a HIPAA-regulated telehealth company with 2M+ patients, using Burp Suite and working through the OWASP Top 10.</li>
+        <li>Found and fixed multiple critical-severity vulnerabilities, including broken access control flaws.</li>
+        <li>Cleaned up a set of smaller bugs across the patient-facing site.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="job">
+    <div class="when">Apr 2025 – now</div>
+    <div>
+      <h3>IT &amp; Operations Assistant <span class="at">@ CSUMB Esports Lounge</span></h3>
+      <ul>
+        <li>Keep 20+ gaming PCs running for campus events: upgrades, repairs, performance tuning.</li>
+        <li>Push software deployments, OS updates and user profiles through a central admin portal.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="job">
+    <div class="when">2022 – 2024</div>
+    <div>
+      <h3>Shipping Coordinator &amp; Technical Assistant <span class="at">@ NaturesTech</span></h3>
+      <p>Ran a $5,000/month ad budget for the Shopify store and shipped 1,000+ packages a month at a 98% on-time rate.</p>
+    </div>
+  </article>
+</section>
+
+<section id="projects">
+  <h2><span class="num">02</span>Projects</h2>
+
+  <div class="cards">
+    <article class="card feature">
+      <div class="card-top">
+        <span class="badge">1st place · OtterHack 2026</span>
+      </div>
+      <h3>Study Buddy</h3>
+      <p>
+        My idea, built with two teammates at CSUMB's AI hackathon. It reads live ECG data from a Polar H10
+        chest strap, estimates stress from heart rate variability and a few other signals, and tells you when
+        to take a break. We beat 20 other teams and split the $1,000 prize. Fitbit and smartwatch support is next.
+      </p>
+      <ul class="tags"><li>Polar H10</li><li>Supabase</li><li>Rive</li><li>OpenAI Codex</li></ul>
+      <a class="link" href="https://study-buddy.dev">study-buddy.dev ↗</a>
+    </article>
+
+    <article class="card">
+      <div class="card-top"><span class="badge">Solo</span></div>
+      <h3>Game Client Reverse Engineering</h3>
+      <p>
+        Hundreds of hours in IDA. I reverse-engineered Fortnite's client, mapped its memory structures in C++
+        and worked out how its software protections operate. The videos I made about it hit 10M+ views across
+        TikTok and YouTube.
+      </p>
+      <ul class="tags"><li>C++</li><li>IDA</li><li>Cheat Engine</li><li>Memory analysis</li></ul>
+    </article>
+
+    <article class="card">
+      <div class="card-top"><span class="badge">Team lead · 4 people</span></div>
+      <h3>Crypto Trading Simulator</h3>
+      <p>
+        A Python desktop app that simulates trading on live CoinGecko prices. I ran the team, the repo and the board.
+      </p>
+      <ul class="tags"><li>Python</li><li>CoinGecko API</li><li>Git</li></ul>
+      <a class="link" href="https://github.com/1onmyraft/trading-sim-group-project">View on GitHub ↗</a>
+    </article>
+  </div>
+</section>
+
+<section id="skills">
+  <h2><span class="num">03</span>Skills</h2>
+  <div class="skills">
+    <div>
+      <h3>Security</h3>
+      <ul class="tags"><li>Web app pen testing</li><li>OWASP Top 10</li><li>Broken access control / IDOR</li><li>Vulnerability remediation</li><li>Reverse engineering</li><li>Memory analysis</li></ul>
+    </div>
+    <div>
+      <h3>Languages</h3>
+      <ul class="tags"><li>C++</li><li>Python</li><li>Java</li><li>Bash</li><li>PowerShell</li></ul>
+    </div>
+    <div>
+      <h3>Tools</h3>
+      <ul class="tags"><li>Burp Suite</li><li>IDA</li><li>Cheat Engine</li><li>Linux</li><li>Windows</li><li>Git</li><li>Supabase</li></ul>
+    </div>
+  </div>
+  <p class="edu"><strong>B.S. Computer Science</strong>, California State University, Monterey Bay · expected May 2028</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2><span class="num">04</span>Contact</h2>
+  <p>Looking for Summer 2027 internships in security or software engineering. The fastest way to reach me is email.</p>
+  <a class="email" href="mailto:tylerfleming32@gmail.com">tylerfleming32@gmail.com</a>
+  <p class="dim small">Seaside, CA · <a href="https://github.com/1onmyraft">GitHub</a> · <a href="https://www.linkedin.com/in/tylerjamesfleming">LinkedIn</a></p>
+</section>
+
+</main>
+
+<footer>© 2026 Tyler Fleming</footer>
+
+<script>
+  document.getElementById('theme').addEventListener('click', function () {
+    var root = document.documentElement;
+    var dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+  });
+</script>
 </body>
 </html>
