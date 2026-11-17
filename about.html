@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Me · Tyler Fleming</title>
+<meta name="description" content="About Tyler Fleming: how I got into security, what I'm studying, and what I'm working toward.">
+<meta property="og:title" content="About Me · Tyler Fleming">
+<meta property="og:description" content="How I got into security, what I'm studying, and what I'm working toward.">
+<meta property="og:url" content="https://1onmyraft.github.io/about.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav">
+  <a class="brand" href="index.html" aria-label="Home">tf<span class="caret" aria-hidden="true"></span></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html" aria-current="page">About Me</a>
+    <a href="Tyler_Fleming_Resume.pdf">Resume</a>
+    <button class="theme" id="theme" type="button" aria-label="Toggle light and dark mode">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main id="main">
+
+<header class="hero page-hero">
+  <p class="kicker">~/tyler <span class="dim">$</span> cat about.md</p>
+  <h1>About me</h1>
+  <p class="lede">
+    I'm Tyler, a Computer Science student at CSU Monterey Bay who likes figuring out how
+    software really works, usually by taking it apart.
+  </p>
+</header>
+
+<section class="prose" aria-labelledby="story">
+  <h2 id="story"><span class="num">01</span>How I got here</h2>
+  <p>
+    I started with games. I wanted to know what was going on underneath, so I opened Fortnite's client
+    in IDA and Cheat Engine and started mapping its memory and working out how its protections held up.
+    That turned into hundreds of hours of reverse engineering, and the videos I made about it ended up
+    with more than 10 million views across TikTok and YouTube.
+  </p>
+  <p>
+    Somewhere along the way I realized the part I liked most was finding the weak spot. So I pointed
+    that at web apps. This past summer I interned remotely at NuggMD, a telehealth company with over
+    2 million patients, where I pen-tested their production platform with Burp Suite, worked through
+    the OWASP Top 10, and found and fixed critical-severity access control bugs. Now I'm doing security
+    work at Wagr, a skill-based betting app where real money is on the line.
+  </p>
+  <p>
+    I also like building things. In April my team of three won OtterHack 2026, CSUMB's AI hackathon,
+    out of 21 teams with Study Buddy. That was my idea: an app that reads your heart rate from an ECG strap
+    and tells you when you need a break. It's live at
+    <a href="https://study-buddy.dev">study-buddy.dev</a>.
+  </p>
+  <p>
+    Before any of this, I spent two years in high school at NaturesTech, running a $5,000/month ad budget
+    for their Shopify store and shipping 1,000+ orders a month. On campus I keep the 20+ machines in the
+    CSUMB Esports Lounge running.
+  </p>
+</section>
+
+<section aria-labelledby="facts">
+  <h2 id="facts"><span class="num">02</span>Quick facts</h2>
+  <dl class="facts">
+    <div><dt>Studying</dt><dd>B.S. Computer Science, CSU Monterey Bay, graduating May 2028</dd></div>
+    <div><dt>Based in</dt><dd>Seaside, California</dd></div>
+    <div><dt>Focus</dt><dd>Web app penetration testing and reverse engineering</dd></div>
+    <div><dt>Right now</dt><dd>Security at Wagr, IT at the CSUMB Esports Lounge</dd></div>
+    <div><dt>Looking for</dt><dd>Summer 2027 internships in security or software engineering</dd></div>
+  </dl>
+</section>
+
+<section aria-labelledby="honors">
+  <h2 id="honors"><span class="num">03</span>Honors</h2>
+  <ul class="honors-list">
+    <li><strong>1st of 21 teams</strong><span>OtterHack 2026 AI Hackathon, CSU Monterey Bay</span></li>
+    <li><strong>7th in California (Division 2)</strong><span>ICPC Regional Programming Contest 2025, competing for CSUMB</span></li>
+    <li><strong>10M+ views</strong><span>Reverse-engineering videos on TikTok and YouTube</span></li>
+  </ul>
+</section>
+
+<section id="skills" aria-labelledby="skills-h">
+  <h2 id="skills-h"><span class="num">04</span>Skills</h2>
+  <div class="skills">
+    <div>
+      <h3>Security</h3>
+      <ul class="tags"><li>Web app pen testing</li><li>OWASP Top 10</li><li>Broken access control / IDOR</li><li>Vulnerability remediation</li><li>Reverse engineering</li><li>Memory analysis</li></ul>
+    </div>
+    <div>
+      <h3>Languages</h3>
+      <ul class="tags"><li>C++</li><li>Python</li><li>Java</li><li>Bash</li><li>PowerShell</li></ul>
+    </div>
+    <div>
+      <h3>Tools</h3>
+      <ul class="tags"><li>Burp Suite</li><li>IDA</li><li>Cheat Engine</li><li>Linux</li><li>Windows</li><li>Git</li><li>Supabase</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="contact" aria-labelledby="contact-h">
+  <h2 id="contact-h"><span class="num">05</span>Say hi</h2>
+  <p>Want to talk security, an internship, or something you're building? Email is the fastest way to reach me.</p>
+  <a class="email" href="mailto:tylerfleming32@gmail.com">tylerfleming32@gmail.com</a>
+  <p class="dim small"><a href="https://github.com/1onmyraft">GitHub</a> · <a href="https://www.linkedin.com/in/tylerjamesfleming">LinkedIn</a> · <a href="index.html#projects">See my projects</a></p>
+</section>
+
+</main>
+
+<footer>© 2026 Tyler Fleming</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
